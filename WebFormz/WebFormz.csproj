@@ -61,20 +61,20 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Browser.cs" />
+    <Compile Include="Src\Browser.cs" />
     <Compile Include="Helpers\Parser.cs" />
-    <Compile Include="iMIS.cs" />
+    <Compile Include="Src\iMIS.cs" />
     <Compile Include="iMISConfig.cs" />
     <Compile Include="Interfaces\IBrowser.cs" />
     <Compile Include="Interfaces\IiMIS.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="Src\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="WebFormItem.cs" />
+    <Compile Include="Data\WebFormItem.cs" />
     <Compile Include="Helpers\WebFormReader.cs" />
   </ItemGroup>
   <ItemGroup>
