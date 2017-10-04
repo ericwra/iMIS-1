@@ -42,7 +42,10 @@ namespace WebFormz
                 browser.SendKeys(iMISConfig.UsernameTextBox, username);
                 browser.SendKeys(iMISConfig.PasswordTextBox, password);
                 browser.Click(iMISConfig.SignInButton);
-                return !Parser.Match(browser.GetPageSource(), LOGIN_ERROR);
+                Console.WriteLine(Parser.Match(browser.GetPageSource(), LOGIN_ERROR));
+                Console.Clear();
+                Console.WriteLine(browser.GetPageSource());
+                return false;
             }
             catch (Exception e)
             {

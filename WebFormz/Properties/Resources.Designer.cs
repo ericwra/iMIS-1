@@ -121,5 +121,20 @@ namespace WebFormz.Properties {
                 return ResourceManager.GetString("ActionN", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;
+        ///&lt;webformz&gt;
+        ///  &lt;!--Custom Script 0=None, 1=ActionA, 2=ActionC, 3=ActionN--&gt;
+        ///  &lt;item webformzno=&quot;WFZ00015&quot; webformzkey=&quot;DB4A74E8-A6FA-483A-9F9F-E2072C25648D&quot; filepath=&quot;&quot; customjavascript=&quot;0&quot;/&gt;
+        ///  &lt;item webformzno=&quot;WFZ00019&quot; webformzkey=&quot;8F598354-FD85-4071-A436-917E3C2DF14B&quot; filepath=&quot;&quot; customjavascript=&quot;0&quot;/&gt;
+        ///  &lt;item webformzno=&quot;WFZ00040&quot; webformzkey=&quot;C35AFBAF-4BCE-4A29-AB3E-F571CB886538&quot; filepath=&quot;&quot; customjavascript=&quot;0&quot;/&gt;
+        ///  &lt;!--&lt;item webformzno=&quot;WFZ00043&quot; webformzke [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string WebFormZ {
+            get {
+                return ResourceManager.GetString("WebFormZ", resourceCulture);
+            }
+        }
     }
 }

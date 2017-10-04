@@ -75,7 +75,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="WebFormItem.cs" />
-    <Compile Include="WebFormReader.cs" />
+    <Compile Include="Helpers\WebFormReader.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config">
@@ -88,7 +88,12 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Resources\ActionA.txt" />
+    <Content Include="Resources\ActionC.txt" />
+    <Content Include="Resources\ActionN.txt" />
+    <Content Include="Resources\WebFormZ.xml" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

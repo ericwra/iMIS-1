@@ -3,7 +3,9 @@ using OpenQA.Selenium.PhantomJS;
 using OpenQA.Selenium.Support.UI;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
+using System.Resources;
 using System.Text;
 using WebFormz.Interfaces;
 
@@ -17,7 +19,7 @@ namespace WebFormz
 
         public Browser(int secondsToWait)
         {
-            PhantomJSDriverService service = PhantomJSDriverService.CreateDefaultService();
+            PhantomJSDriverService service = PhantomJSDriverService.CreateDefaultService(ConfigurationManager.AppSettings["phantomjs"]);
             service.AddArgument("--webdriver-loglevel=None");
             browser = new PhantomJSDriver(service);
             browser.Manage().Timeouts().PageLoad = TimeSpan.FromSeconds(secondsToWait);
