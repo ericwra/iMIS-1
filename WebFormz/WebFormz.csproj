@@ -61,8 +61,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Interfaces\IDatabase.cs" />
     <Compile Include="Src\Browser.cs" />
     <Compile Include="Helpers\Parser.cs" />
+    <Compile Include="Src\Database.cs" />
     <Compile Include="Src\iMIS.cs" />
     <Compile Include="iMISConfig.cs" />
     <Compile Include="Interfaces\IBrowser.cs" />
@@ -75,7 +77,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="Data\WebFormItem.cs" />
-    <Compile Include="Helpers\WebFormReader.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config">
@@ -87,12 +88,6 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Resources\ActionA.txt" />
-    <Content Include="Resources\ActionC.txt" />
-    <Content Include="Resources\ActionN.txt" />
-    <Content Include="Resources\WebFormZ.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
