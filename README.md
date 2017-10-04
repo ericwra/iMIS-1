@@ -1,6 +1,8 @@
 # WebFormz
 Tool to automate WebFormZ Build
 
-```csharp
-int bar;
+```xml
+<webformz>
+  <item webformzno="" webformzkey="" confirmationpage="" customjavascript=""/>
+</webformz>
 
