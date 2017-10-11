@@ -1,5 +1,5 @@
-# WebFormz
-Tool to automate WebFormZ Build
+# iMIS-Refresh
+Tool to automate our iMIS refreshes
 
 # Usage
 
